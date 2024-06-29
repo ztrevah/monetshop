@@ -63,7 +63,7 @@ const ProductDetail = () => {
   useEffect(() => {
     const getProductDetail = async () => {
       try {
-        const res = await axios.post("https://monetshopserver.vercel.app/api/search/getProductDetails",param,{withCredentials: true});
+        const res = await axios.post("https://monetshop.onrender.com/api/search/getProductDetails",param,{withCredentials: true});
         setProductDetails(res.data);
         if(res.data.quantity === 0) setError("This product is currently out of stock.");
         else setNumberPurchaseItems(1);
@@ -118,7 +118,7 @@ const ProductDetail = () => {
     if(currentUser) {
       if(!error) {
         try {
-          await axios.post("https://monetshopserver.vercel.app/api/cart/add",{productid: productDetails.productid, quantity: numberPurchaseItems});
+          await axios.post("https://monetshop.onrender.com/api/cart/add",{productid: productDetails.productid, quantity: numberPurchaseItems});
           setAdded(true);
           setAddItem({
             img: productDetails.imgurl?.at(0), 

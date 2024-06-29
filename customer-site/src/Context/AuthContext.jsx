@@ -8,7 +8,7 @@ export const AuthContextProvider =  ({children}) => {
     axios.defaults.withCredentials = true;
     const login  = async (input) => {
         try {
-            const res = await axios.post("https://monetshopserver.vercel.app/api/auth/login",input,{withCredentials: true});
+            const res = await axios.post("https://monetshop.onrender.com/api/auth/login",input,{withCredentials: true});
             setCurrentUser(res.data);
         } catch (err) {
             console.log(err);
@@ -17,18 +17,13 @@ export const AuthContextProvider =  ({children}) => {
     };
     
     const logout = async () => {
-        await axios.post("https://monetshopserver.vercel.app/api/auth/logout");
+        await axios.post("https://monetshop.onrender.com/api/auth/logout");
         setCurrentUser(null);
     };
     const verify = async () => {
         try {
-            const res = await axios.post("https://monetshopserver.vercel.app/api/auth/verify",null);
-            if(res.data) {
-                setCurrentUser(res.data);
-            } 
-            else {
-                setCurrentUser(null);
-            }
+            const res = await axios.post("https://monetshop.onrender.com/api/auth/verify",null,{withCredentials: true});
+            setCurrentUser(res.data);
         } catch(err) {
             setCurrentUser(null);
             console.log(err);
@@ -37,5 +32,6 @@ export const AuthContextProvider =  ({children}) => {
     useEffect(() => {
         verify();
     });
+    console.log(currentUser);
     return <AuthContext.Provider value = {{currentUser,login,logout,verify}}>{children}</AuthContext.Provider>;
 }

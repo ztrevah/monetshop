@@ -48,7 +48,7 @@ const PurchaseView = (props) => {
         if(inputs.orderitems.length === 0) return;
         if(inputs.firstname && inputs.surname && inputs.phone && inputs.address && inputs.orderitems && inputs.paymentmethod) {
             try {
-                const res = await axios.post("https://monetshopserver.vercel.app/api/order/create",inputs,{withCredentials: true});
+                const res = await axios.post("https://monetshop.onrender.com/api/order/create",inputs,{withCredentials: true});
                 console.log(res);
                 navigate("/purchase",{state: {successful: true},replace: true});
             } catch (err) {

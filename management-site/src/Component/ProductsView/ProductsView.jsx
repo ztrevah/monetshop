@@ -22,7 +22,7 @@ const ProductsView = () => {
     useEffect(() => {
         const fetchproducts = async () => {
             try {
-                const res = await axios.post("https://monetshopserver.vercel.app/api/management/productlist",null,{withCredentials: true});
+                const res = await axios.post("https://monetshop.onrender.com/api/management/productlist",null,{withCredentials: true});
                 setProductList(res.data);
             } catch(err) {
                 console.log(err);
@@ -37,7 +37,7 @@ const ProductsView = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post("https://monetshopserver.vercel.app/api/management/productlist",input,{withCredentials: true});
+            const res = await axios.post("https://monetshop.onrender.com/api/management/productlist",input,{withCredentials: true});
             setProductList(res.data);
             console.log(res.data);
         } catch(err) {

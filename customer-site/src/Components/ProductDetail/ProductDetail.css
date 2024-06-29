@@ -109,8 +109,7 @@
     font-size: 20px;
 }
 .productinfo-wrapper .errormsg{
-    font-size: 20px;
-    font-style: italic;
+    font-size: 18px;
     padding-left: 10px;
     font-weight: 100;
     color: red;

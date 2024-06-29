@@ -45,7 +45,7 @@ const OrderOtherDetail = (props) => {
         if(props.orderid) {
             const getitems = async () => {
                 try {
-                    const res = await axios.post("https://monetshopserver.vercel.app/api/order/getorderitems",{orderid: props.orderid},{withCredentials: true});
+                    const res = await axios.post("https://monetshop.onrender.com/api/order/getorderitems",{orderid: props.orderid},{withCredentials: true});
                     setOrderItems(res.data);
                 } catch(err) {
                     console.log(err);
@@ -152,7 +152,7 @@ const OrdersView = () => {
         if(currentUser) {
             const getOrderLists = async () => {
                 try {
-                    const res = await axios.post("https://monetshopserver.vercel.app/api/order/getcustomerorder",{customerid: currentUser.uid},{withCredentials: true});
+                    const res = await axios.post("https://monetshop.onrender.com/api/order/getcustomerorder",{customerid: currentUser.uid},{withCredentials: true});
                     setOrdersList(res.data);
                     console.log(res.data);
                     setOrderSortOption("Date: New - Old");
@@ -194,7 +194,7 @@ const OrdersView = () => {
     const handleSubmit = () => {
         const getOrderByID = async () => {
             try {
-                const res = await axios.post("https://monetshopserver.vercel.app/api/order/searchorder",searchInputs,{withCredentials: true});
+                const res = await axios.post("https://monetshop.onrender.com/api/order/searchorder",searchInputs,{withCredentials: true});
                 setOrdersList(res.data);
                 setOrderSortOption("Date: New - Old");
                 if(res.data.length === 0) {

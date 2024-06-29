@@ -24,7 +24,7 @@ const CartView = () => {
   const navigate = useNavigate();
   const getCartDetails = async () => {
     try {
-      const res = await axios.post("https://monetshopserver.vercel.app/api/cart/details",null,{withCredentials: true});
+      const res = await axios.post("https://monetshop.onrender.com/api/cart/details",null,{withCredentials: true});
       const tmp = [];
       for(let i=0;i<summaryItemList.length;i++) {
         for(let j=0;j<res.data.length;j++) {
@@ -46,7 +46,7 @@ const CartView = () => {
     if(currentUser) {
       const getCartDetails = async () => {
         try {
-          const res = await axios.post("https://monetshopserver.vercel.app/api/cart/details",null,{withCredentials: true});
+          const res = await axios.post("https://monetshop.onrender.com/api/cart/details",null,{withCredentials: true});
           setCartItems(res.data);
         } catch (err) {
           console.log(err);
@@ -60,7 +60,7 @@ const CartView = () => {
   
   const increaseNumberOfProducts = async (item) => {
     try {
-      await axios.put("https://monetshopserver.vercel.app/api/cart/updateitem",{productid: item.productid,newquantity: item.quantity+1},{withCredentials: true});
+      await axios.put("https://monetshop.onrender.com/api/cart/updateitem",{productid: item.productid,newquantity: item.quantity+1},{withCredentials: true});
       getCartDetails();
     } catch(err) {
       console.log(err);
@@ -69,7 +69,7 @@ const CartView = () => {
   const decreaseNumberOfProducts = async (item) => {
     if(item.quantity === 1) return;
     try {
-      await axios.put("https://monetshopserver.vercel.app/api/cart/updateitem",{productid: item.productid,newquantity: item.quantity-1},{withCredentials: true});
+      await axios.put("https://monetshop.onrender.com/api/cart/updateitem",{productid: item.productid,newquantity: item.quantity-1},{withCredentials: true});
       getCartDetails();
     } catch(err) {
       console.log(err);
@@ -77,7 +77,7 @@ const CartView = () => {
   }
   const deleteCartItem = async (item) => {
     try {
-      await axios.delete("https://monetshopserver.vercel.app/api/cart/deleteitem",{data: {productid: item.productid}},{withCredentials: true});
+      await axios.delete("https://monetshop.onrender.com/api/cart/deleteitem",{data: {productid: item.productid}},{withCredentials: true});
       getCartDetails();
     } catch(err) {
       console.log(err);
