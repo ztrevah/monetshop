@@ -26,5 +26,5 @@ app.listen(9090,() => {
     console.log("Connected");
 });
 app.get("/",(req,res) => {
-    return res.status(200).json("Connected");
+    return res.status(200).json(req.cookies);
 })
