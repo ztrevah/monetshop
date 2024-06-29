@@ -68,6 +68,10 @@
 .loginform-input div input:focus {
     box-shadow: 0 0 2px 2px #f1f1f1;
 }
+.loginform-error {
+    margin-bottom: 20px;
+    color: red;
+}
 .loginform-submit {
     text-align: center;
 }

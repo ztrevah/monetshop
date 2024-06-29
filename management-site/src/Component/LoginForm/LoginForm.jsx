@@ -43,9 +43,12 @@ const LoginForm = () => {
                         <input type="password" id="password" name="password" onChange={handleChange} />
                     </div>
                 </div>
+                {error ? 
                 <div className="loginform-error">
                     {error}
-                </div>
+                </div> 
+                : ""}
+                
                 <div className="loginform-submit" onClick={handleSubmit}>
                     <button>Login</button>
                 </div>

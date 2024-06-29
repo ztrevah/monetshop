@@ -183,7 +183,8 @@ export const getorderlist = (req,res) => {
                 } 
                 
                 let q1 = "select orderid,createdtime as orderdate,accounts.email as customer,getcurrentstate(orderid) as currentstate,calc_totalprice(orderid) as totalprice\
-                from orderinfo, accounts where orderinfo.buyerid = accounts.uid";
+                from orderinfo, accounts where orderinfo.buyerid = accounts.uid\
+                order by createdtime desc";
                 const input = {};
                 if(req.body.orderid) {
                     q1 += " and orderid = ?";
