@@ -1,0 +1,75 @@
+.productdetail {
+    padding: 20px 10px;
+}
+.productdetail * {
+    font-family: 'Inter';
+}
+.productdetail-title {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 0px 20px;
+    text-align: left;
+}
+.productdetail-initial {
+    margin-top: 30px;
+    padding: 0px 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.productdetail-initial span {
+    margin-bottom: 10px;
+}
+.productdetail-wrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.productdetail-info {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    width: 50%;
+}
+.productdetail-info-name,.productdetail-info-unitprice,.productdetail-info-quantity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.productdetail-info-description {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.productdetail-info div label {
+    font-size: 20px;
+    width: 30%;
+    text-align: left;
+}
+.productdetail-info div input {
+    font-size: 18px;
+    width: 65%;
+    padding: 5px 10px;
+}
+.productdetail-info div textarea {
+    font-size: 18px;
+    width: 65%;
+    padding: 5px 10px;
+}
+.productdetail-btn {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 30px;
+}
+.productdetail-btn button {
+    border-style: none;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-left: 20px;
+    cursor: pointer;
+}

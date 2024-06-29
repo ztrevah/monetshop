@@ -1,0 +1,112 @@
+.ordersview {
+    padding: 20px 10px;
+}
+.ordersview * {
+    font-family: 'Inter';
+}
+.ordersview-title {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 0px 20px;
+    text-align: left;
+}
+.ordersview-form {
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+}
+.ordersview-forminput {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+}
+.ordersview-forminput div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.ordersview-forminput div div {
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(0,0,0,0.5);
+    width: 80%;
+}
+.ordersview-forminput input, select{
+    font-size: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    border-style: none;
+    padding: 10px 0px;
+}
+.ordersview-forminput option {
+    font-size: 18px;
+}
+.ordersview-formbtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ordersview-formbtn button {
+    width: 100px;
+    padding: 7px 15px;
+    font-size: 18px;
+    border-radius: 20px;
+    border-style: none;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.ordersview-formsearchbtn {
+    background-color: #C80036;
+}
+.ordersview-formcancelbtn {
+    background-color: #3c3c3c;
+}
+.orderlist-wrapper {
+    padding: 0px 10px;
+}
+.orderlist-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.orderlist-wrapper table th {
+    background-color: #8E1A1A;
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 10px;
+}
+.orderlist-wrapper table td {
+    text-align: left;
+    padding: 10px 10px;
+}
+.orderlist-wrapper table th tr {
+    display: flex;
+    justify-content: space-between;
+}
+.orderlist-wrapper table tbody tr {
+    cursor: pointer;
+}
+.orderlist-wrapper table tbody tr:hover {
+    background-color: #E4E2E2;
+}
+.tabler--sort-ascending {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23F8F8F8' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h7m-7 6h7m-7 6h9m2-9l3-3l3 3m-3-3v12'/%3E%3C/svg%3E");
+}
+.tabler--sort-descending {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23F8F8F8' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h9m-9 6h7m-7 6h7m4-3l3 3l3-3m-3-9v12'/%3E%3C/svg%3E");
+}

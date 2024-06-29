@@ -1,0 +1,83 @@
+.loginpage-container {
+    display: flex;
+    flex-direction: column;
+}
+.loginpage-container * {
+    font-family: 'Inter';
+}
+.loginpage-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    box-sizing: border-box;
+    height: 80px;
+    padding: 20px 100px;
+    border-bottom: 2px solid #dfe3e6;
+}
+.loginpage-header-logo-wrapper {
+    height: 100%;
+}
+.loginpage-header-logo-wrapper img {
+    height: 100%;
+}
+.loginform-wrapper {
+    min-height: calc(100vh - 80px);
+    box-sizing: border-box;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.loginform {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+.loginform .loginform-title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}   
+.loginform .loginform-title span {
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.loginform-input {
+    display:block;
+    margin-bottom: 30px;
+}
+.loginform-input div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px 0px;
+}
+.loginform-input div label {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+.loginform-input div input {
+    width: 100%;
+    font-size: 20px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: #dfe3e6;
+    outline: none;
+}
+.loginform-input div input:focus {
+    box-shadow: 0 0 2px 2px #f1f1f1;
+}
+.loginform-submit {
+    text-align: center;
+}
+.loginform-submit button {
+    border-style: none;
+    background-color: #C80036;
+    color: #FFFFFF;
+    padding: 10px 5px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 20px;
+    border-radius: 10px;
+}
