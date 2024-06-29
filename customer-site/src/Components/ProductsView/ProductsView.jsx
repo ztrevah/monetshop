@@ -25,7 +25,7 @@ const ProductsView = (props) => {
                 console.log(err);
             }
         }
-        return () => fetchProductLists();
+        fetchProductLists();
     },[props]);
     const handleChange = (e) => {
         setFilterInput(values => ({...values, [e.target.name]: e.target.value}));
