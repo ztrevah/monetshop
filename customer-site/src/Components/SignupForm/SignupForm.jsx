@@ -20,7 +20,7 @@ const Step1 = () => {
         if(inputs.email.length === 0) setError("Required");
         else {
             try{
-                const res = await axios.post("http://localhost:9090/backend/auth/signups1",inputs,{withCredentials: true});
+                const res = await axios.post("https://monetshopserver.vercel.app/api/auth/signups1",inputs,{withCredentials: true});
                 console.log(res);
                 const url = "/signup/step2?email=" + inputs.email;
                 navigate(url);
@@ -71,7 +71,7 @@ const Step2 = (props) => {
         else {
             const checkEmail = async () => {
                 try{
-                    const res = await axios.post("http://localhost:9090/backend/auth/checkmailsignup",{email: email},{withCredentials: true});
+                    const res = await axios.post("https://monetshopserver.vercel.app/api/auth/checkmailsignup",{email: email},{withCredentials: true});
                     input["accountType"] = res.data.accountType;
                 } catch(err) {
                     console.log(err);
@@ -134,7 +134,7 @@ const Step2 = (props) => {
         
         else if(!(inputError.code) && !(inputError.email) && !(inputError.password) && !(inputError.firstname) && !(inputError.gender) && !(inputError.phone)) {
             try{
-                const res = await axios.post("http://localhost:9090/backend/auth/signups2",input,{withCredentials: true});
+                const res = await axios.post("https://monetshopserver.vercel.app/api/auth/signups2",input,{withCredentials: true});
                 console.log(res);
                 navigate("/signup/step3",{state: {accountType: input.accountType}});
             } catch(err) {
@@ -146,7 +146,7 @@ const Step2 = (props) => {
     };
     const resendCode = () => {
         try{
-            const res = axios.post("http://localhost:9090/backend/auth/signups1",input,{withCredentials: true});
+            const res = axios.post("https://monetshopserver.vercel.app/api/auth/signups1",input,{withCredentials: true});
             console.log(res);
         } catch(err) {
             console.log(err);

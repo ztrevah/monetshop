@@ -8,7 +8,7 @@ export const AuthContextProvider =  ({children}) => {
     axios.defaults.withCredentials = true;
     const login  = async (input) => {
         try {
-            const res = await axios.post("http://localhost:9090/backend/management/login",input,{withCredentials: true});
+            const res = await axios.post("https://monetshopserver.vercel.app/api/management/login",input,{withCredentials: true});
             setCurrentUser(res.data);
         } catch (err) {
             console.log(err);
@@ -17,12 +17,12 @@ export const AuthContextProvider =  ({children}) => {
     };
     
     const logout = async () => {
-        await axios.post("http://localhost:9090/backend/management/logout");
+        await axios.post("https://monetshopserver.vercel.app/api/management/logout");
         setCurrentUser(null);
     };
     const verify = async () => {
         try {
-            const res = await axios.post("http://localhost:9090/backend/management/verify",null,{withCredentials: true});
+            const res = await axios.post("https://monetshopserver.vercel.app/api/management/verify",null,{withCredentials: true});
             if(res.data) {
                 setCurrentUser(res.data);
             } 

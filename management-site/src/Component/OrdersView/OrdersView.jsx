@@ -31,7 +31,7 @@ const OrdersView = () => {
     useEffect(() => {
         const fetchorders = async () => {
             try {
-                const res = await axios.post("http://localhost:9090/backend/management/orderlist",null,{withCredentials: true});
+                const res = await axios.post("https://monetshopserver.vercel.app/api/management/orderlist",null,{withCredentials: true});
                 setOrderList(res.data);
                 console.log(res.data);
             } catch(err) {
@@ -47,7 +47,7 @@ const OrdersView = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post("http://localhost:9090/backend/management/orderlist",input,{withCredentials: true});
+            const res = await axios.post("https://monetshopserver.vercel.app/api/management/orderlist",input,{withCredentials: true});
             setOrderList(res.data);
             console.log(res.data);
         } catch(err) {

@@ -17,7 +17,7 @@ const ProductsView = (props) => {
     useEffect(() => {
         const fetchProductLists = async () => {
             try{
-                const res = await axios.post("http://localhost:9090/backend/search/getproductslist",props,{withCredentials: true});
+                const res = await axios.post("https://monetshopserver.vercel.app/api/search/getproductslist",props,{withCredentials: true});
                 setProductList(res.data);
                 setInitProductList(res.data);
             } catch(err) {

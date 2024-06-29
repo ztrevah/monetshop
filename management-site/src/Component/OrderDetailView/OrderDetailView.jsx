@@ -29,7 +29,7 @@ const OrderInfoDiv = (props) => {
     useEffect(() => {
         const getorderinfo = async () => {
             try {
-                const res = await axios.post("http://localhost:9090/backend/management/orderinfo",props,{withCredentials: true});
+                const res = await axios.post("https://monetshopserver.vercel.app/api/management/orderinfo",props,{withCredentials: true});
                 setOrderInfo(res.data);
             } catch(err) {
                 console.log(err);
@@ -82,7 +82,7 @@ const OrderItemsDiv = (props) => {
     useEffect(() => {
         const getorderitems = async () => {
             try {
-                const res = await axios.post("http://localhost:9090/backend/management/orderitems",props,{withCredentials: true});
+                const res = await axios.post("https://monetshopserver.vercel.app/api/management/orderitems",props,{withCredentials: true});
                 setOrderItems(res.data);
             } catch(err) {
                 console.log(err);
@@ -119,7 +119,7 @@ const OrderHistoryDiv = (props) => {
     useEffect(() => {
         const getOrderHistory = async () => {
             try {
-                const res = await axios.post("http://localhost:9090/backend/management/orderhistory",props,{withCredentials: true});
+                const res = await axios.post("https://monetshopserver.vercel.app/api/management/orderhistory",props,{withCredentials: true});
                 setOrderHistory(res.data);
             } catch(err) {
                 console.log(err);
