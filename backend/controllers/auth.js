@@ -130,7 +130,7 @@ export const verify = (req,res) => {
                 if(data.length === 0) {
                     return res.clearCookie("access_token",{
                         secure:true
-                    }).json("Invalid token");
+                    }).status(401).json("Invalid token");
                 } 
                 const {password, ...other} = data[0];
                 return res.status(200).json(other);
@@ -139,8 +139,8 @@ export const verify = (req,res) => {
         else {
             return res.clearCookie("access_token",{
                 secure:true
-            }).json("Invalid token");
+            }).status(401).json("Invalid token");
         }
     }
-    else return res.json("No token sent");
+    else return res.status(401).json("No token sent");
 }
