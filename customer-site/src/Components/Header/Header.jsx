@@ -38,9 +38,7 @@ function Navbar() {
                 </form>
             </div>
             <div id="customer_area">
-                {(currentUser === null) ? 
-                <button className="signin_button" onClick={openSigninPopup}>Sign in</button> 
-                :
+                {(currentUser) ? 
                 <div>
                     <img src={avatar} className="avatar" alt="User avatar" />
                     <ul className="dropdown">
@@ -54,7 +52,9 @@ function Navbar() {
                         <li onClick={handleLogout} style={{cursor: "pointer",fontSize: "20px"}} className="dropdown-content">Logout</li>
 
                     </ul>
-                </div>}
+                </div>
+                : <button className="signin_button" onClick={openSigninPopup}>Sign in</button> 
+                }
             </div>
             <LoginForm trigger={signinPopUp} setTrigger={setSigninPopup} />
         </div>

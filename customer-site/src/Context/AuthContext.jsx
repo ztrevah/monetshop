@@ -32,6 +32,5 @@ export const AuthContextProvider =  ({children}) => {
     useEffect(() => {
         verify();
     },[]);
-    console.log(currentUser);
     return <AuthContext.Provider value = {{currentUser,login,logout,verify}}>{children}</AuthContext.Provider>;
 }
