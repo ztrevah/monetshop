@@ -8,21 +8,24 @@ import managementRoutes from "./routes/management.js"
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import dotenv from "dotenv";
-import { db } from "./db.js";
 dotenv.config();
 
 const app = express();
-app.use(cors({credentials: true, origin: ["http://localhost:3000","http://localhost:5000"]}));
+app.use(cors({credentials: true, origin: ["https://monetshopmanagement.vercel.app","https://monetshop.vercel.app"]}));
 app.use(express.json());
 app.use(cookieParser());
-app.use("/backend/auth/",authRoutes);
-app.use("/backend/cart/",cartRoutes);
-app.use("/backend/users/",userRoutes);
-app.use("/backend/search/",searchRoutes);
-app.use("/backend/order/",orderRoutes);
-app.use("/backend/management/",managementRoutes);
+app.use("/api/auth/",authRoutes);
+app.use("/api/cart/",cartRoutes);
+app.use("/api/users/",userRoutes);
+app.use("/api/search/",searchRoutes);
+app.use("/api/order/",orderRoutes);
+app.use("/api/management/",managementRoutes);
 
 let PORT = process.env.PORT || 9090;
 app.listen(9090,() => {
     console.log("Connected");
+});
+
+app.get("/",(req,res) => {
+    return res.status(200).json("Connected");
 })
