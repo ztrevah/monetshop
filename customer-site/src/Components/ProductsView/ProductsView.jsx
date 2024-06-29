@@ -20,6 +20,7 @@ const ProductsView = (props) => {
                 const res = await axios.post("https://monetshopserver.vercel.app/api/search/getproductslist",props,{withCredentials: true});
                 setProductList(res.data);
                 setInitProductList(res.data);
+                console.log(res.data);
             } catch(err) {
                 console.log(err);
             }
@@ -29,7 +30,6 @@ const ProductsView = (props) => {
     const handleChange = (e) => {
         setFilterInput(values => ({...values, [e.target.name]: e.target.value}));
     };
-    console.log(initProductList);
     
     const handleSubmit = (e) => {
         e.preventDefault();
