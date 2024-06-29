@@ -17,8 +17,12 @@ export const AuthContextProvider =  ({children}) => {
     };
     
     const logout = async () => {
-        await axios.post("https://monetshop.onrender.com/api/auth/logout");
-        setCurrentUser(null);
+        try {
+            await axios.post("https://monetshop.onrender.com/api/auth/logout",null,{withCredentials: true});
+            setCurrentUser(null);
+        } catch(err) {
+            console.log(err);
+        }
     };
     const verify = async () => {
         try {
