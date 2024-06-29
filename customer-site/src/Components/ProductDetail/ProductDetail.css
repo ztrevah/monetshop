@@ -1,0 +1,334 @@
+.productdetails {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.productdetails * { 
+    font-family: "Inter";
+}
+.title span {
+    font-size: 30px;
+    font-weight: 600;
+}
+.productdetail-wrapper {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 30px 30px;
+}
+.productimage-wrapper {
+    width: 55%;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+.imagelist {
+    width: 12%;
+    display: block;
+    text-align: center;
+}
+.imagelist div {
+    margin: 5px 0px;
+}
+.imagelist div img {
+    width: 100%;
+    opacity: 20%;
+    cursor: pointer;
+}
+.imagelist div img:hover {
+    opacity: 80%;
+}
+.imagelist div span {
+    width: 20px;
+    height: 20px;
+}
+.displayedimage {
+    width: 80%;
+    padding-top: 25px;
+}
+.displayedimage img {
+    width: 100%
+}
+.productinfo-wrapper {
+    width: 40%;
+    padding: 25px 30px;
+}
+.productinfo-wrapper .name {
+    margin-bottom: 10px;
+}
+.productinfo-wrapper .name span {
+    font-size: 36px;
+    font-weight: 600;
+}
+.productinfo-wrapper .id {
+    margin-bottom: 20px;
+}
+.productinfo-wrapper .id span {
+    color: #074173;
+    font-size: 24px;
+}
+.productinfo-wrapper .price {
+    margin-bottom: 20px;
+}
+.productinfo-wrapper .price span {
+    color: #CD1010;
+    font-size: 30px;
+    font-weight: 600;
+}
+.productinfo-wrapper .quantity {
+    font-size: 28px;
+    padding-top: 30px; 
+    padding-bottom: 20px;
+    border-style: solid;
+    border-width: 3px;
+    border-top-color: #D2CFCF;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+}
+.productinfo-wrapper .quantity .quantity-input{
+    display: flex;
+}
+.productinfo-wrapper .quantity .quantity-input .inputarea{ 
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: #D8D4D4;
+    align-items: center;
+    display: flex;
+    margin-left: 10px;
+    padding: 5px 5px;
+}
+.productinfo-wrapper .quantity .quantity-input div input{ 
+    text-align: center;
+    width: 50px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+.productinfo-wrapper .errormsg{
+    font-size: 20px;
+    font-style: italic;
+    padding-left: 10px;
+    font-weight: 100;
+    color: red;
+}
+.productinfo-wrapper .purchaseoptions {
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.productinfo-wrapper .purchaseoptions .buybutton-wrapper {
+    height: 100%;
+    width: 65%;
+}
+.productinfo-wrapper .purchaseoptions .buybutton-wrapper button {
+    height: 100%;
+    width: 100%;
+    font-size: 24px;
+    color: #FFFFFF;
+    background-color: #8644A2;
+    border-style: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.productinfo-wrapper .purchaseoptions .cartbutton-wrapper {
+    height: 100%;
+    width: 33%;
+}
+.productinfo-wrapper .purchaseoptions .cartbutton-wrapper button {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #8644A2;
+    border-style: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.productinfo-wrapper .description {
+    border-style: solid;
+    border-width: 3px;
+    border-top-color: #D2CFCF;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    padding-top: 30px;
+}
+.productinfo-wrapper .description .description-title span {
+   color: #DC6B19;
+   font-size: 28px;
+   font-weight: 600;
+   margin-right: 10px;
+}
+.productinfo-wrapper .description .description-title .mingcute--down-fill {
+    width: 20px;
+    height: 20px;
+ }
+ 
+
+.addtocart-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 10px;
+    font-family: 'Inter';
+    background-color: #FFFFFF;
+    height: 200px;
+    width: 300px;
+    display: block;
+    z-index: 1;
+}
+.addtocart-popup .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+.addtocart-popup .header .checkicon-wrapper {
+    display: flex;
+    align-items: center;
+}
+.addtocart-popup .additem-details {
+    display: flex;
+    width: 100%;
+    padding: 10px 10px;
+}
+.addtocart-popup .additem-details .additem-img {
+    width: 25%;
+}
+.addtocart-popup .additem-details img {
+    width: 100%;
+}
+.addtocart-popup .additem-details .additem-other {
+    padding: 3px 10px;
+    font-size: 16px;
+}
+.addtocart-popup .additem-details .additem-name {
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+.addtocart-popup .additem-details .additem-quantity {
+    padding-bottom: 10px;
+}
+.addtocart-popup .additem-details .additem-price {
+    color: #CD1010;
+}
+.addtocart-popup .viewcartbtn-wrapper {
+    text-align: center;
+}
+.addtocart-popup .viewcartbtn-wrapper button{
+    border-style: solid;
+    border-color: #A2A2A2;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+.addtocart-popup .viewcartbtn-wrapper button:hover{
+    border-color: #000000;
+}
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: #e3e3e3;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.mi--shopping-cart-add {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M6.01 16.136L4.141 4H3a1 1 0 0 1 0-2h1.985a.993.993 0 0 1 .66.235a.997.997 0 0 1 .346.627L6.319 5H14v2H6.627l1.23 8h9.399l1.5-5h2.088l-1.886 6.287A1 1 0 0 1 18 17H7.016a.993.993 0 0 1-.675-.248a.998.998 0 0 1-.332-.616zM10 20a2 2 0 1 1-4 0a2 2 0 0 1 4 0m9 0a2 2 0 1 1-4 0a2 2 0 0 1 4 0m0-18a1 1 0 0 1 1 1v1h1a1 1 0 1 1 0 2h-1v1a1 1 0 1 1-2 0V6h-1a1 1 0 1 1 0-2h1V3a1 1 0 0 1 1-1'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+.mingcute--up-fill {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z'/%3E%3Cpath fill='%23000' d='M10.94 7.94a1.5 1.5 0 0 1 2.12 0l5.658 5.656a1.5 1.5 0 1 1-2.122 2.121L12 11.122l-4.596 4.596a1.5 1.5 0 1 1-2.122-2.12z'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+.mingcute--down-fill {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z'/%3E%3Cpath fill='%23000' d='M13.06 16.06a1.5 1.5 0 0 1-2.12 0l-5.658-5.656a1.5 1.5 0 1 1 2.122-2.121L12 12.879l4.596-4.596a1.5 1.5 0 0 1 2.122 2.12l-5.657 5.658Z'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+.ic--round-plus {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M18 12.998h-5v5a1 1 0 0 1-2 0v-5H6a1 1 0 0 1 0-2h5v-5a1 1 0 0 1 2 0v5h5a1 1 0 0 1 0 2'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+.ic--round-minus {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M18 12.998H6a1 1 0 0 1 0-2h12a1 1 0 0 1 0 2'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+.line-md--circle-twotone-to-confirm-circle-twotone-transition {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg stroke='%230FA958' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3Ccircle cx='12' cy='12' r='9' fill='%230FA958' fill-opacity='0.3'/%3E%3Cpath fill='none' stroke-dasharray='14' stroke-dashoffset='14' d='M8 12L11 15L16 10'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' dur='0.2s' values='14;0'/%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+.mdi--close {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12z'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    cursor: pointer;
+}

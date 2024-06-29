@@ -1,0 +1,215 @@
+.signupform {
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    margin-bottom: 200px;
+}
+.signupform * { 
+    font-family: 'Inter';
+}
+.signupform-header {
+    height: 32px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.signupform-header span {
+    font-size: 32px;
+    font-weight: 600;
+}
+.ph--arrow-right {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath fill='%23000' d='m221.66 133.66l-72 72a8 8 0 0 1-11.32-11.32L196.69 136H40a8 8 0 0 1 0-16h156.69l-58.35-58.34a8 8 0 0 1 11.32-11.32l72 72a8 8 0 0 1 0 11.32'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    cursor: pointer;
+}
+.ph--arrow-left {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath fill='%23000' d='M224 128a8 8 0 0 1-8 8H59.31l58.35 58.34a8 8 0 0 1-11.32 11.32l-72-72a8 8 0 0 1 0-11.32l72-72a8 8 0 0 1 11.32 11.32L59.31 120H216a8 8 0 0 1 8 8'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    cursor: pointer;
+}
+.form-s1{
+    font-size: 24px;
+    text-align: left;
+}
+.email-enter-wrapper {
+    margin-bottom: 30px;
+}
+.email-enter-wrapper div {
+    margin: 10px 30px;
+    font-size: 16px;
+}
+.email-enter-wrapper div input {
+    font-size: 20px;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    border-color: #000000;
+}
+.requestError {
+    font-size: 20px;
+    color: #CD1010;
+}
+.account-type-wrapper select {
+    border-radius: 30px;
+    font-size: 20px;
+    margin-left: 30px;
+    width: 200px;
+    padding: 5px 10px;
+}
+.continue-btn {
+    text-align: right;
+    margin-top: 50px;
+}
+.continue-btn button {
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-style: none;
+}
+
+.form-s3 {
+    text-align: left;
+    font-weight: 400;
+}
+.form-s3 .inform-s3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.form-s3 .form-s3-row{
+    display: flex;
+    font-size: 20px;
+}
+.form-s3 .form-s3-label {
+    font-size: 20px;
+    color: #102C57;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.form-s3 .form-s3-row div{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    display: inline-block;
+}
+.form-s3 .form-s3-row div .error {
+    padding: 0px 0px;
+}
+.verification-code-field{
+    padding: 10px 20px;
+    font-size: 20px;
+}
+.verification-code-field div {
+    display: flex;
+    border-top: #FFFFFF;
+    border-right: #FFFFFF;
+    border-left: #FFFFFF;
+    border-bottom: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-style: solid;
+    border-width: 2px;
+    justify-content: space-between;
+}
+.verification-code-field div input {
+    border-style: none;
+    width: 80%;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    outline: none;
+    font-family: "Inter";
+}
+.verification-code-field div .resend-code {
+    text-align: center;
+    border-style: none; 
+    display: flex;
+    padding-bottom: 5px;
+}
+.resend-code span {
+    font-weight: 100;
+    font-size: 16px;
+    align-self: flex-end;
+}
+.resend-code:hover span {
+    font-weight: 600;
+}
+.form-s3-row1 .error {
+    padding: 0px 20px;
+    color: red;
+}
+.form-s3 .form-s3-row div input {
+    border-top: #FFFFFF;
+    border-right: #FFFFFF;
+    border-left: #FFFFFF;
+    width: 100%;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    outline: none;
+    font-family: "Inter";
+}
+.form-s3 .form-s3-row div .error .inputError {
+    color: red;
+    font-size: 14px;
+}
+
+.form-s4 {
+    text-align: left;
+    font-size: 24px;
+}
+.inform-s4 {
+    margin-bottom: 100px;
+}
+
+.continue-btn a {
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-style: none;
+    text-decoration: none;
+}
+.mdi--refresh {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M17.65 6.35A7.96 7.96 0 0 0 12 4a8 8 0 0 0-8 8a8 8 0 0 0 8 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0 1 12 18a6 6 0 0 1-6-6a6 6 0 0 1 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4z'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    padding-bottom: 5px;
+}
+.ep--warning-filled {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'%3E%3Cpath fill='red' d='M512 64a448 448 0 1 1 0 896a448 448 0 0 1 0-896m0 192a58.43 58.43 0 0 0-58.24 63.744l23.36 256.384a35.072 35.072 0 0 0 69.76 0l23.296-256.384A58.43 58.43 0 0 0 512 256m0 512a51.2 51.2 0 1 0 0-102.4a51.2 51.2 0 0 0 0 102.4'/%3E%3C/svg%3E");
+}

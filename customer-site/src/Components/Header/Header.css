@@ -1,0 +1,187 @@
+.headerbar * {
+    box-sizing: border-box;
+    font-family: 'Inter';
+  }
+  .headerbar {
+    background-color: #FFFFFF;
+  }
+  .header_bar1{
+    display: flex;
+    font-size: 24px;
+    font-family: "Inter";
+    height: 60px;
+    background-color: #FFCEBE;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header_logo_wrapper {
+    padding-left: 30px;
+    height: 80%;
+  }
+  .header_logo {
+    height: 100%;
+  }
+  .header_navbar ul{
+    list-style-type: none;
+    margin-left: 50px;
+  }
+  .header_navbar ul li {
+    display: inline-block;
+    padding: 10px 30px;
+  }
+  .header_navbar ul li a{
+    color: #000000;
+    text-decoration: none;
+  }
+  .signin_button{
+    border: none;
+    font-size: 24px;
+    background-color: #D862BC;
+    color: #FFFFFF;;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  .search-bar{
+    border-color: none;
+    border-radius: 30px;
+    background-color: #D9D9D9; 
+  }
+  .search-bar1{
+    display: flex;
+    align-items: center;
+    padding: 0px 15px;
+  }
+  
+  .search-input{
+    background-color: #D9D9D9;
+    border: none;
+    font-size: 24px;
+  }
+  .search-inputdiv{
+    background-color: #D9D9D9;
+    border: none;
+    font-size: 30px;
+    padding-left: 5px;
+    margin: 5px 5px;
+  }
+  .header_bar2{
+    display: flex;
+    background-color: #FFF2E1;
+    height: 30px;
+    text-align: center;
+    padding: 0px 250px;
+    font-family: 'Ms Madi',cursive;
+    font-size: 24px;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  #lovemessage{
+    padding: 0px 10px;
+  }
+  .material-symbols-outlined{
+    font-size: 28px;
+  }
+  .ic--round-less-than {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' fill-rule='evenodd' d='m16.75 17l-7.5-5l7.5-5a.901.901 0 1 0-1-1.5l-8.502 5.668a1 1 0 0 0 0 1.664L15.75 18.5a.901.901 0 1 0 1-1.5'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    cursor: pointer;
+  }
+  .ic--round-greater-than {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' fill-rule='evenodd' d='m7.25 17l7.5-5l-7.5-5a.901.901 0 1 1 1-1.5l8.502 5.668a1 1 0 0 1 0 1.664L8.25 18.5a.901.901 0 1 1-1-1.5'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    cursor: pointer;
+  }
+
+#customer_area div {
+  position: relative;
+  float: right;
+}
+.avatar {
+  height: 60px;
+  cursor: pointer;
+}
+#customer_area div:hover .dropdown{
+  display: block;
+}
+.dropdown {
+  display:none;
+  position: absolute;
+  z-index: 999;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: 0;
+  right: 0;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  width: 150px;
+  list-style: none;
+  box-shadow: 0 0 10px;
+}
+.dropdown li{
+  display: block;
+  text-decoration: none;
+}
+.dropdown .account-brief-info {
+  border-bottom: #5d5d5d;
+  border-top: #FFFFFF;
+  border-left: #FFFFFF;
+  border-right: hsl(0, 0%, 100%);
+  border-style: solid;
+  border-width: thin;
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+.dropdown .account-brief-info {
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dropdown-content{
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.dropdown-content:hover {
+  font-weight: 600;
+}
+.dropdown li a{
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  
+}
+.carbon--user-avatar {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23000' d='M16 8a5 5 0 1 0 5 5a5 5 0 0 0-5-5m0 8a3 3 0 1 1 3-3a3.003 3.003 0 0 1-3 3'/%3E%3Cpath fill='%23000' d='M16 2a14 14 0 1 0 14 14A14.016 14.016 0 0 0 16 2m-6 24.377V25a3.003 3.003 0 0 1 3-3h6a3.003 3.003 0 0 1 3 3v1.377a11.9 11.9 0 0 1-12 0m13.993-1.451A5 5 0 0 0 19 20h-6a5 5 0 0 0-4.992 4.926a12 12 0 1 1 15.985 0'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}

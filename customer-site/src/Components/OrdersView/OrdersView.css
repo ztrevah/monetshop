@@ -1,0 +1,289 @@
+.ordersview {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.ordersview * {
+    font-family: 'Inter';
+}
+.ordersview .ordersview-title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 100px;
+}
+.ordersview .ordersview-headerbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.ordersview .ordersview-headerbar .orders-searchbar {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.ordersview .ordersview-headerbar .orders-searchbar label {
+    font-size: 24px;
+}
+.ordersview .ordersview-headerbar .orders-searchbar input {
+    width: 30%;
+    outline: none;
+    border-bottom: 2px solid #000000;
+    border-top: #FFFFFF;
+    border-left: #FFFFFF;
+    border-right: #FFFFFF;
+    font-size: 24px;
+    margin-right: 20px;
+    margin-left: 15px;
+}
+.ordersview .ordersview-headerbar .orders-searchbar button {
+    padding: 7px 15px;
+    font-size: 20px;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-style: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.ordersview .ordersview-headerbar .orders-sortoptions {
+    font-size: 22px;
+}
+.ordersview .ordersview-headerbar .orders-sortoptions select {
+    font-size: 20px;
+    padding: 5px 10px;
+}
+.ordersview .ordersview-orderslist {
+    display: block;
+    padding: 0px 100px
+}
+.ordersview .ordersview-orderslist .orderdetail-wrapper {
+    display: block;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #CABEBE;
+    border-width: 1px;
+    padding: 10px 20px;
+    margin: 30px 0px;
+}
+.ordersview .ordersview-orderslist .emptyorderslist {
+    text-align: center;
+    padding: 50px 0px;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+}
+.ordersview .ordersview-orderslist .orderdetail-wrapper .orderdetail-iddate {
+    font-size: 16px;
+    color: #505050;
+    padding: 10px 0px;
+}
+.ordersview .ordersview-orderslist .orderdetail-wrapper .orderdetail-imagenamepricestate {
+    display: flex;
+    padding: 10px 50px;
+}
+.ordersview .ordersview-orderslist .orderdetail-wrapper .orderdetail-imagenamepricestate .orderdetail-image {
+    width: 10%;
+}
+.ordersview .ordersview-orderslist .orderdetail-wrapper .orderdetail-imagenamepricestate .orderdetail-image img {
+    width: 100%;
+}
+.ordersview .ordersview-orderslist .orderdetail-wrapper .orderdetail-imagenamepricestate .orderdetail-namepricestate {
+    display: block;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.ordersview .ordersview-orderslist .orderdetail-wrapper .orderdetail-imagenamepricestate .orderdetail-namepricestate .orderdetail-name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.ordersview .ordersview-orderslist .orderdetail-wrapper .orderdetail-imagenamepricestate .orderdetail-namepricestate .orderdetail-price {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.ordersview .ordersview-orderslist .orderdetail-wrapper .orderdetail-imagenamepricestate .orderdetail-namepricestate .orderdetail-state {
+    font-size: 18px;
+}
+.ordersview .ordersview-orderslist .orderdetail-wrapper .orderdetail-more {
+    padding: 10px 150px;
+}
+.ordersview .ordersview-orderslist .orderdetail-wrapper .orderdetail-more .orderdetail-statesummary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    margin-bottom: 30px;
+}
+.ordersview .ordersview-orderslist .orderdetail-wrapper .orderdetail-more .orderdetail-statesummary .statelist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+.ordersview .ordersview-orderslist .orderdetail-wrapper .orderdetail-more .orderdetail-statesummary .statelist .state-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+    height: 100px;
+}
+.ordersview .ordersview-orderslist .orderdetail-wrapper .orderdetail-more .orderdetail-statesummary .statelist .state-wrapper .num-unchecked {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ordersview .ordersview-orderslist .orderdetail-wrapper .orderdetail-more .orderdetail-statesummary .statelist .state-wrapper .num-checked {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: #1039CD;
+    color: #FFFFFF;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ordersview .ordersview-orderslist .orderdetail-wrapper .orderdetail-more .orderdetail-statesummary .statelist .state-wrapper .statedescription {
+    text-align: center;
+    height: 50px;
+    font-size: 16px;
+}
+.ordersview .ordersview-orderslist .orderdetail-wrapper .orderdetail-more .orderdetail-addressphonepayment-items {
+    display: flex;
+}
+.ordersview .ordersview-orderslist .orderdetail-wrapper .orderdetail-more .orderdetail-addressphonepayment-items .orderdetail-addressphonepayment {
+    display: block;
+    width: 50%;
+    padding-right: 20px;
+}
+.ordersview .ordersview-orderslist .orderdetail-wrapper .orderdetail-more .orderdetail-addressphonepayment-items .orderdetail-addressphonepayment div {
+    margin-bottom: 20px;
+}
+.ordersview .ordersview-orderslist .orderdetail-wrapper .orderdetail-more .orderdetail-addressphonepayment-items .orderdetail-items {
+    display: block;
+    width: 50%;
+}
+.ordersview .ordersview-orderslist .orderdetail-wrapper .orderdetail-more .orderdetail-addressphonepayment-items .orderdetail-items .orderdetail-items-title {
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #D9D9D9;
+}
+.ordersview .ordersview-orderslist .orderdetail-wrapper .orderdetail-more .orderdetail-addressphonepayment-items .orderdetail-items .orderdetail-itemslist {
+    border-bottom: 1px solid #D9D9D9;
+}
+.ordersview .ordersview-orderslist .orderdetail-wrapper .orderdetail-more .orderdetail-addressphonepayment-items .orderdetail-items .orderdetail-itemslist .orderdetail-item {
+    padding: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.ordersview .ordersview-orderslist .orderdetail-wrapper .orderdetail-more .orderdetail-addressphonepayment-items .orderdetail-items .orderdetail-itemslist .orderdetail-item .orderdetail-item-nameid {
+    display: block;
+    width: 50%;
+}
+.ordersview .ordersview-orderslist .orderdetail-wrapper .orderdetail-more .orderdetail-addressphonepayment-items .orderdetail-items .orderdetail-itemslist .orderdetail-item .orderdetail-item-nameid .orderdetail-item-name {
+    font-size: 18px;
+}
+.ordersview .ordersview-orderslist .orderdetail-wrapper .orderdetail-more .orderdetail-addressphonepayment-items .orderdetail-items .orderdetail-itemslist .orderdetail-item .orderdetail-item-nameid .orderdetail-item-id {
+    font-size: 16px;
+    color: #B6AFAF;
+}
+.ordersview .ordersview-orderslist .orderdetail-wrapper .orderdetail-more .orderdetail-addressphonepayment-items .orderdetail-items .orderdetail-itemslist .orderdetail-item .orderdetail-item-quantity {
+    width: 15%;
+    font-size: 18px;
+    text-align: right;
+}
+.ordersview .ordersview-orderslist .orderdetail-wrapper .orderdetail-more .orderdetail-addressphonepayment-items .orderdetail-items .orderdetail-itemslist .orderdetail-item .orderdetail-item-price {
+    width: 33%;
+    font-size: 18px;
+    color: #CD1010;
+    text-align: right;
+}
+.ordersview .ordersview-orderslist .orderdetail-wrapper .orderdetail-more .orderdetail-addressphonepayment-items .orderdetail-items .orderdetail-items-total {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.ordersview .ordersview-orderslist .orderdetail-wrapper .orderdetail-expand-collapse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+.ordersview .ordersview-orderslist .orderdetail-wrapper .orderdetail-expand-collapse span {
+    cursor: pointer;
+}
+.ic--round-greater-than {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' fill-rule='evenodd' d='m7.25 17l7.5-5l-7.5-5a.901.901 0 1 1 1-1.5l8.502 5.668a1 1 0 0 1 0 1.664L8.25 18.5a.901.901 0 1 1-1-1.5'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+.ic--round-less-than {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' fill-rule='evenodd' d='m16.75 17l-7.5-5l7.5-5a.901.901 0 1 0-1-1.5l-8.502 5.668a1 1 0 0 0 0 1.664L15.75 18.5a.901.901 0 1 0 1-1.5'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+.mingcute--up-fill {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z'/%3E%3Cpath fill='%23000' d='M10.94 7.94a1.5 1.5 0 0 1 2.12 0l5.658 5.656a1.5 1.5 0 1 1-2.122 2.121L12 11.122l-4.596 4.596a1.5 1.5 0 1 1-2.122-2.12z'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+.mingcute--down-fill {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z'/%3E%3Cpath fill='%23000' d='M13.06 16.06a1.5 1.5 0 0 1-2.12 0l-5.658-5.656a1.5 1.5 0 1 1 2.122-2.121L12 12.879l4.596-4.596a1.5 1.5 0 0 1 2.122 2.12l-5.657 5.658Z'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+.fa-regular--sad-tear {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 496 512'%3E%3Cpath fill='%23000' d='M248 8C111 8 0 119 0 256s111 248 248 248s248-111 248-248S385 8 248 8m0 448c-110.3 0-200-89.7-200-200S137.7 56 248 56s200 89.7 200 200s-89.7 200-200 200m8-152c-13.2 0-24 10.8-24 24s10.8 24 24 24c23.8 0 46.3 10.5 61.6 28.8c8.1 9.8 23.2 11.9 33.8 3.1c10.2-8.5 11.6-23.6 3.1-33.8C330 320.8 294.1 304 256 304m-88-64c17.7 0 32-14.3 32-32s-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32m160-64c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32m-165.6 98.8C151 290.1 126 325.4 126 342.9c0 22.7 18.8 41.1 42 41.1s42-18.4 42-41.1c0-17.5-25-52.8-36.4-68.1c-2.8-3.7-8.4-3.7-11.2 0'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }
