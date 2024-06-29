@@ -26,6 +26,5 @@ app.listen(9090,() => {
     console.log("Connected");
 });
 app.get("/",(req,res) => {
-    console.log(req);
     return res.status(200).json("Connected");
 })

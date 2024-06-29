@@ -116,6 +116,7 @@ export const logout = (req,res) => {
 }
 
 export const verify = (req,res) => {
+    console.log(req);
     const usertoken = req.cookies.access_token;
     if(usertoken) {
         const userinfo = jwt.verify(usertoken,process.env.JWT_SECRET_KEY);
