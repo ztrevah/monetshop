@@ -8,7 +8,7 @@ const Headerbar = () => {
         return (
             <header>
                 <div className="shoplogo">
-                    <img src="http://localhost:5000/images/shoplogo.png" alt="" />
+                    <img src="/images/shoplogo.png" alt="" />
                 </div>
                 <div className="accountlogo-wrapper">
                     <div className="accountinfo">
